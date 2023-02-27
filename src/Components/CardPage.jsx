@@ -2,10 +2,16 @@ import React from 'react'
 import "./cardpage.css"
 
 function CardPage() {
+
+    async function submitbtn() {
+        alert("sucess")
+
+    }
+
     return (
         <div>
             <div className="center">
-                <h1>Task Added</h1>
+                <h1 className='task' >Task Added</h1>
                 <div className="form1">
                     <div className="txt_field">
                         <input type="text" className='title' required />
@@ -17,7 +23,7 @@ function CardPage() {
                         <span></span>
                         <label htmlFor="">Discription</label>
                     </div>
-                    <input type="submit" value="Submit" className='sub' />
+                    <input type="submit" onClick={submitbtn} value="Submit" className='sub' />
                     <p className='parasss' >“Before you reject a task as Impossible, ask yourself why God presented you with this thing to be done.”</p>
                 </div>
             </div>

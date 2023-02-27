@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    background: linear-gradient(120deg, #9cb2c0, #1e55c3);
     height: 100vh;
     overflow: hidden;
     margin: 0;
@@ -16,6 +16,7 @@ body {
     height: 500px;
     background: white;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .center h1 {
@@ -93,6 +94,7 @@ body {
 
 .sub:hover {
     text-decoration: underline;
+    color: black;
 
 }
 
@@ -117,5 +119,10 @@ input[type="submit"]:hover {
 .parasss {
     font-family: sans-serif;
     font-weight: 500;
+    color: black;
 
+}
+
+.task {
+    color: black;
 }
