@@ -12,8 +12,8 @@ function AllCards({ taskData }) {
     return (
         <div>
             <div className='contanier' >
-                <h1 className='title'>Title</h1>
-                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Placeat, officiis voluptatibus. Atque, officiis! At eos, magni minus velit rerum, vel repudiandae eum praesentium exercitationem, ex nobis cum pariatur odit sit.
+                <h1 className='title'>{taskData.title}</h1>
+                <p className='para'>{taskData.discription}
 
                 </p>
                 <button className='
