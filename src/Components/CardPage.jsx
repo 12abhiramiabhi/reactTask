@@ -26,7 +26,7 @@ function CardPage() {
                     <input type="submit" onClick={submitbtn} value="Submit" className='sub' />
                     <p className='parasss' >“Before you reject a task as Impossible, ask yourself why God presented you with this thing to be done.”</p>
                 </div>
-            </div>
+            </div> 
 
         </div>
     )
