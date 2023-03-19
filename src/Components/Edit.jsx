@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
 
 
@@ -13,14 +13,19 @@ function Edit() {
     const [discription, setDiscription]=useState("")
 
 
-    async function editBtn(){
+    async function editBtn(e){
+        e.preventDefault()
 
         let obj={title, discription}
-        let response=await axios.patch("localhost:3000/api/task/updatetask",obj)
+        let response=await axios.patch(`localhost:3000/api/task/updatetask/${location.state._id}`,obj)
 
         console.log(response);
     }
 
+    useEffect(()=>{
+        // setTitle(location.state.title)
+        // setDiscription(location.state.discription)
+    },[])
 
     
     
